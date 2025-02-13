@@ -25,7 +25,7 @@ body{
 }
 .popup{
     width: 70%;
-    height: 70%;
+    height: auto;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -81,4 +81,24 @@ body{
 }
 .popup .text {
     font-size: 1rem;
+}
+
+/* (มือถือ) */
+@media (max-width: 768px) {
+    .popup .header{
+        font-size: 24px;
+    }
+    .popup .text {
+        font-size: 20px;
+    }
+}
+
+/* (มือถือเล็กมาก) */
+@media (max-width: 480px) {
+    .popup .header{
+        font-size: 24px;
+    }
+    .popup .text {
+        font-size: 20px;
+    }
 }
